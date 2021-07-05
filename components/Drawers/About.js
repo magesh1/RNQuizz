@@ -5,6 +5,7 @@ import { Appbar, Card, Button, Title, Paragraph} from "react-native-paper"
 
 
 
+
 const Header = () => (
 	<Appbar.Header>
 		<Appbar.Content title="About" />

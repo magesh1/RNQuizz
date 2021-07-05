@@ -1,12 +1,14 @@
 import React from 'react'
 import { View, Text, Button, TouchableOpacity, StyleSheet } from 'react-native'
 import { Entypo } from "@expo/vector-icons"
+import { StatusBar } from "expo-status-bar"
 
 
 
 const Home = ({navigation}) => {
     return (
 			<View>
+				<StatusBar style="light" />
 				<Text>TNPSC</Text>
 				{/* <Button title="toggledrawer" onPress={() => navigation.toggleDrawer()}/> */}
 				<TouchableOpacity onPress={() => navigation.toggleDrawer()}>

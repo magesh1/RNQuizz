@@ -37,7 +37,6 @@ const SyllabusStackScreen = () => (
 
 
 const Drawer = createDrawerNavigator();
-
 const Tab = createBottomTabNavigator();
 
 const HomeStack = createStackNavigator();
@@ -47,29 +46,77 @@ const ResultStack = createStackNavigator()
 
 
 const HomeStackScreen = () => (
+	
 	<HomeStack.Navigator screenOptions={{ headerTitleAlign: "center" }}>
-		<HomeStack.Screen name="TNPSC" component={Home} />
-		
+		<HomeStack.Screen
+			name="TNPSC"
+			component={Home}
+			options={{
+				headerStyle: {
+					backgroundColor: "#5a189a",
+				},
+				headerTintColor: "#fff",
+				headerTitleStyle: {
+					fontWeight: "bold",
+				},
+			}}
+		/>
 	</HomeStack.Navigator>
 )
 
 const BookStackScreen = () => (
 	<BookStack.Navigator screenOptions={{ headerTitleAlign: "center" }}>
-		<BookStack.Screen name="Books" component={Books} />
+		<BookStack.Screen
+			name="Books"
+			component={Books}
+			options={{
+				headerStyle: {
+					backgroundColor: "#ff7900",
+				},
+				headerTintColor: "#fff",
+				headerTitleStyle: {
+					fontWeight: "bold",
+				},
+			}}
+		/>
 	</BookStack.Navigator>
 )
 
 
 const ProfileStackScreen = () => (
 	<ProfileStack.Navigator screenOptions={{ headerTitleAlign: "center" }}>
-		<ProfileStack.Screen name="Profile" component={Profile} />
+		<ProfileStack.Screen
+			name="Profile"
+			component={Profile}
+			options={{
+				headerStyle: {
+					backgroundColor: "#33415c",
+				},
+				headerTintColor: "#fff",
+				headerTitleStyle: {
+					fontWeight: "bold",
+				},
+			}}
+		/>
 	</ProfileStack.Navigator>
 )
 
 
 const ResultStackScreen = () => (
 	<ResultStack.Navigator screenOptions={{ headerTitleAlign: "center" }}>
-		<ResultStack.Screen name="Result" component={Result} />
+		<ResultStack.Screen
+			name="Result"
+			component={Result}
+			options={{
+				headerStyle: {
+					backgroundColor: "#9381ff",
+				},
+				headerTintColor: "#fff",
+				headerTitleStyle: {
+					fontWeight: "bold",
+				},
+			}}
+		/>
 	</ResultStack.Navigator>
 )
 
